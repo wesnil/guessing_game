@@ -6,11 +6,11 @@ read input
 local re='^[0-9]+$'
 local solution=$(ls | wc -l)
 local dis=1
-while [[ $dis == 1 ]]
+while [[  $dis == 1  ]]
 do
-	if ! [[  $input =~ $re  ]]
+	if ! [[ $input =~ $re ]]
 	then
-		echo"Error: Please stick to numbers." >&2;
+		echo "Error: Please stick to numbers." >&2;
 		read input
 	else
 		if [[ $input == $solution ]]
